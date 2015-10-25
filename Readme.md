@@ -20,7 +20,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 By doing this, I automatically dowload a zip file.
 After unzipping the file, we should have a directory named UCI HAR Dataset. 
 
-Set the working directory to UCI HAR datasets. 
 Don't change anything in this directory.
 
 The structure of the UCI HAR datasets directory are as follows:
