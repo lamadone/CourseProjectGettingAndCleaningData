@@ -212,6 +212,9 @@ Dimensions of the tidy dataset : 180 observations of 68 variables
 
 ##Description of the variables
 
+***No unit of measures is reported as all features were normalized and bounded within [-1,1]***.
+
+
 ###activity 
 
 This variable give the name of the six activities performed for the experiment.
