@@ -13,21 +13,21 @@ if(!("dplyr" %in% installed.packages()[,"Package"])) {
 
 library(data.table)
 
-y_train<-fread(file.path("./train/y_train.txt"))
-x_train<-fread(file.path("./train/X_train.txt"))
-sub_train<-fread(file.path("./train/subject_train.txt"))
+y_train<-fread(file.path("UCI HAR Dataset/train/y_train.txt"))
+x_train<-fread(file.path("UCI HAR Dataset/train/X_train.txt"))
+sub_train<-fread(file.path("UCI HAR Dataset/train/subject_train.txt"))
 
 
-y_test<-fread(file.path("./test/y_test.txt"))
-x_test<-fread(file.path("./test/X_test.txt"))
-sub_test<-fread(file.path("./test/subject_test.txt"))
+y_test<-fread(file.path("UCI HAR Dataset/test/y_test.txt"))
+x_test<-fread(file.path("UCI HAR Dataset/test/X_test.txt"))
+sub_test<-fread(file.path("UCI HAR Dataset/test/subject_test.txt"))
 
 train<-cbind(sub_train,y_train,x_train)
 test<-cbind(sub_test,y_test,x_test)
 
 complete.file<-rbind(train,test)
 
-features <- fread(file.path("./features.txt"))
+features <- fread(file.path("UCI HAR Dataset/features.txt"))
 
 features[,dup:=duplicated(V2)]
 
@@ -61,7 +61,7 @@ rm(complete.file)
 
 #step 3
 
-activity <- read.table(file.path("./activity_labels.txt"))
+activity <- read.table(file.path("UCI HAR Dataset/activity_labels.txt"))
 activity<-data.table(activity)
 names(activity)<-c("numactivity","activity")
 setkey(activity,numactivity)
