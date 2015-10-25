@@ -2,16 +2,17 @@
 title: "Readme"
 output: html_document
 ---
-Sorry for my poor english.
+
+This is the Readme file explaining what the analysis file does.
 
 For the course project, we should create one R script called run_analysis.R that does the following: 
 - Merges the training and the test sets to create one data set.
-- Extracts only the measurements on the mean and standard deviation for each measurement. 
-- Uses descriptive activity names to name the activities in the data set
+- Extracts only the measurements on the mean and standard deviation for each measurement. - Uses descriptive activity names to name the activities in the data set
 - Appropriately labels the data set with descriptive variable names. 
 - From the data set in step 4, creates a second, independent tidy data set with the average of each    variable for each activity and each subject.
 
 This is the description on how the script that I have created works for each given step.
+Sorry for my poor english.
 
 The data have been collected by clicking on the link below.  
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
